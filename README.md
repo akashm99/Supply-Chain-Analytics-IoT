@@ -20,9 +20,9 @@ built with utilizing various APIs, tools and services.
 #### 1. Create API-Keys for HERE, AWS Access keys(* permissions for AWS IoT Core), Iot Core Endpoints.
 #### 2. In 'js' folder create file 'apikey.js'.
 #### 3. Paste below code in 'apikey.js' with modifications and save:
-export const region = "<YOUR AWS REGION>";
-export const endpoint = "<IOT ENDPOINT>";
-export const aws_key = "<AWS ACCESS KEY>";
-export const aws_secret = "<AWS SECRET KEY>";
-export const here_api = "<HERE API KEY>";
+export const region = "YOUR AWS REGION";<br>
+export const endpoint = "IOT ENDPOINT";<br>
+export const aws_key = "AWS ACCESS KEY";<br>
+export const aws_secret = "AWS SECRET KEY";<br>
+export const here_api = "HERE API KEY";<br>
 #### 4. load 'index.html' on server(localhost).
