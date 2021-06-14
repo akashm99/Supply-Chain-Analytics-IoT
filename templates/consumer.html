@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+    <title>Consumer</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <!-- HERE JS V3.1 -->
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <!-- Resources for AWS IoT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/hmac-min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/sha256-min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.711.0.min.js"></script>
+    <style>
+        body {padding: 10px; margin: 10px;background: linear-gradient(to bottom, #DCDEC9 0%, #ABC0C5 100%);}
+        .button {background: radial-gradient(ellipse at center, #f1d6d6 0%, #DCDEC9 100%);border-radius:25px;}
+        #consumerView {display:none; }
+        #mapContainer {width: 100vw; height: 100vh;}
+    </style>
+</head>
+<body>
+    <div id="mapContainer"></div>
+    <div id="consumerView">
+        <h2>Consumer Delivery Address</h2>
+        <h4 id="address"></h4>
+        <button class="button" id="retail01">Order from Retail 01</button><br />
+        <button class="button" id="retail02">Order from Retail 02</button>
+        <hr />
+        <textarea id="status" cols="40" rows="20"></textarea>
+    </div>
+     <script type="module" src="/js/consumerApp.js"></script>
+     <script>let useAddress = {};</script>
+</body>
+</html>
